@@ -8,11 +8,9 @@ body{
     background-color: #fff;
     box-shadow: 0 1px 3px -2px black;
     display: flex;
-    justify-content: space-around;
-    padding: 4px 0;
-    top: 0;
-    left: 0;
-    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
     z-index: 10;
 }
 .logo img{
@@ -22,12 +20,14 @@ body{
 }
 .nav-menu {
     display: flex;
-    align-items: center;
+    gap: 30px;
+}
+.nav-menu ul{
+    display: flex;
+    gap: 30px;
     list-style: none;
-    gap: 50px;
-    color: #626262;
-    font-size: 18px;
-    font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-menu li {
@@ -368,3 +368,70 @@ body{
   }
 }
 
+/* Hamburger styles */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Open state animations */
+.nav-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive Mobile Nav */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-btn {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-btn.active {
+    display: flex;
+  }
+}

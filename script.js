@@ -26,3 +26,15 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error fetching businesses:", error);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.getElementById("nav-toggle");
+  const navMenu = document.getElementById("nav-menu");
+  const navBtn = document.getElementById("nav-btn");
+
+  toggleBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    navBtn.classList.toggle("active");
+    toggleBtn.classList.toggle("open");
+  });
+});
