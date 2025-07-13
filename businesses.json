@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Naija Cafe",
+    "category": "Restaurant",
+    "location": "Lekki, Lagos",
+    "rating": "4.5",
+    "image": "Images/cafe.jpg"
+  },
+  {
+    "name": "QuickCut Barbers",
+    "category": "Barber",
+    "location": "Yaba, Lagos",
+    "rating": "4.3",
+    "image": "Images/barber.jpg"
+  },
+  {
+    "name": "Glow Salon",
+    "category": "Beauty",
+    "location": "Surulere, Lagos",
+    "rating": "4.7",
+    "image": "Images/glow.jpg"
+  },
+  {
+    "name": "Oga Market",
+    "category": "Grocery",
+    "location": "Abuja",
+    "rating": "4.2",
+    "image": "Images/market .jpg"
+  },
+  {
+    "name": "CodeHub Cafe",
+    "category": "Co-working",
+    "location": "Ikeja, Lagos",
+    "rating": "4.6",
+    "image": "Images/codehub.jpg"
+  }
+]

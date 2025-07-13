@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing-Page</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Images/logo.png" alt="logo">
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-btn">
+            <button id="location">Explore Location</button>
+            <button id="started">Get started</button>
+        </div>
+    </div>
+
+    <!--Hero section of the landing page-->
+    <section class="hero">
+  <div class="hero-wrapper">
+    <div class="hero-content">
+      <h1>Discover Amazing Places Around You</h1>
+      <p>The simplest, smartest way to find businesses, services and hidden gems across Nigeria. Your local discovery starts here.</p>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-container">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" placeholder="Search business or try @beekeys" />
+        <button class="search-btn">Search ⟶</button>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filters">
+        <button class="filter-btn">Distance ⌄</button>
+        <button class="filter-btn">Open hours ⌄</button>
+        <button class="filter-btn">Accessibility ⌄</button>
+        <button class="filter-btn">Verification ⌄</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!--Search button-->
+
+    <div class="listing" id="business-listing">
+         <h2>Popular Businesses Near You</h2>
+        <div class="listing-grid" id="listing-grid"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
