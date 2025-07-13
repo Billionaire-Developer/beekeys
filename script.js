@@ -27,14 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleBtn = document.getElementById("nav-toggle");
-  const navMenu = document.getElementById("nav-menu");
-  const navBtn = document.getElementById("nav-btn");
 
-  toggleBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-    navBtn.classList.toggle("active");
-    toggleBtn.classList.toggle("open");
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("nav-toggle");
+    const menu = document.getElementById("nav-menu");
+
+    toggle.addEventListener("click", () => {
+      toggle.classList.toggle("open");
+      menu.classList.toggle("active");
+    });
   });
-});
