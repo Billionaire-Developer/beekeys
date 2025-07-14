@@ -212,8 +212,6 @@ body {
   font-size: 14px;
   cursor: pointer;
   transition: grey 0.3s, transform 0.2s;
-  white-space: nowrap;
-  width: auto;
 }
 
 /* Cards Grid */
@@ -321,9 +319,6 @@ body {
     flex-direction: column;
     gap: 2px;
     width: 100%;
-  }
-  .search-icon{
-    margin-left: 500px;
   }
 
   .search-input,
