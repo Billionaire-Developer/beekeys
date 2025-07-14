@@ -320,7 +320,7 @@ body {
   .search-box {
     flex-direction: column;
     gap: 2px;
-    width: 140%;
+    width: 100%;
   }
   .search-icon{
     margin-left: 500px;
